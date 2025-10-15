@@ -1,9 +1,8 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
 
-#include<iostream>
-#include<vector>
-#include<algorithm>
-
-// binary search function to check if target exists in nums2
 bool find_bs(vector<int> &nums2, int &target)
 {
     int l = 0, r = nums2.size() - 1;
@@ -20,7 +19,6 @@ bool find_bs(vector<int> &nums2, int &target)
     return false; // target not found
 }
 
-// function to find intersection of nums1 and nums2
 vector<int> intersection(vector<int> &nums1, vector<int> &nums2)
 {
     vector<int> ans;
@@ -36,4 +34,19 @@ vector<int> intersection(vector<int> &nums1, vector<int> &nums2)
         }
     }
     return ans; // return the intersection array
+}
+
+int main()
+{
+    vector<int> nums1 = {4, 9, 5};
+    vector<int> nums2 = {9, 4, 9, 8, 4};
+
+    vector<int> result = intersection(nums1, nums2);
+
+    cout << "Intersection: ";
+    for (int x : result)
+        cout << x << " ";
+    cout << endl;
+
+    return 0;
 }
