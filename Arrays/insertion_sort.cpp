@@ -26,3 +26,5 @@ int main() {
         cout << arr[i] << " ";
     return 0;
 }
+//best case O(n)
+//average & worst case O(n2)
