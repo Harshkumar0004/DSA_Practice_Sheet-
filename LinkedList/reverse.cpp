@@ -1,4 +1,5 @@
 #include <iostream>
+#include<stack>
 using namespace std;
 
 struct Node {
@@ -117,6 +118,28 @@ public:
         cout<<"Number of Nodes are :"<<cnt<<endl;
         return;
     }
+
+    // reverse List using extra space-- -- -- -- -- -- -- -- -- -- -- -- -- -->
+
+    //     Node *revlist()
+    // {
+    //     stack<int> stk;
+    //     Node *temp = head;
+    //     while (temp)
+    //     {
+    //         stk.push(temp->data);
+    //         temp = temp->next;
+    //     }
+    //     Node *temp2 = head;
+    //     while (temp2)
+    //     {
+    //         int ele = stk.top();
+    //         temp2->data = ele;
+    //         temp2 = temp2->next;
+    //         stk.pop();
+    //     }
+    //     return head;
+    // }
 
     // reverse List ---------------------------->
     void reverse() {
