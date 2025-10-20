@@ -91,6 +91,28 @@ public:
         delete temp;
         cout << "Node deleted!!" << endl;
     }
+    //count method for middle find-------------------------->
+    // int countnode(Node *head)
+    // {
+    //     Node *temp = head;
+    //     int cnt = 0;
+    //     while (temp)
+    //     {
+    //         cnt++;
+    //         temp = temp->next;
+    //     }
+    //     return cnt;
+    // }
+    // Node* midlist(){
+    //     int n=(countnode(head)/2)+1;
+    //     Node* temp=head;
+    //     while(n>1){
+    //         temp=temp->next;
+    //         n--;
+    //     }
+    //     return temp;
+    // }
+
 
     //middle of list----------------------------------------->
     
