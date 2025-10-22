@@ -16,10 +16,20 @@ int maxprofit(vector<int> &prices)
     }
     return profit;
 }
-
+//one pass approach-O(n)
+int optmaxprofit(vector<int>&prices){
+    int minprice = INT_MAX;
+    int profit = 0;
+    for (int price : prices)
+    {
+        minprice = min(minprice, price);         // lowest so far
+        profit = max(profit, price - minprice);  // maximize profit
+    }
+    return profit;
+}
 
 int main(){
     vector<int> prices = {7,1,5,3,6,4};
-    cout<<maxprofit(prices)<<endl;
+    cout<<optmaxprofit(prices)<<endl;
     return 0;
 }
